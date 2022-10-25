@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square cesped;
+    private Person person;
 
     /**
      * Constructor for objects of class Picture
@@ -64,7 +65,14 @@ public class Picture
         sun.makeVisible();
         sun.slowMoveVertical(-50);
         sun.slowMoveVertical(-160);
-
+        
+        person = new Person();
+        person.changeColor("black");
+        person.moveHorizontal(-180);
+        person.moveVertical(-12);
+        person.makeVisible();
+    
+    
     }
 
     /**
@@ -98,6 +106,8 @@ public class Picture
     
     {
         sun.slowMoveVertical(160);
+        
+        person.slowMoveHorizontal(45);
 
     }
 }
