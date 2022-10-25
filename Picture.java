@@ -66,15 +66,7 @@ public class Picture
         sun.slowMoveVertical(-50);
         sun.slowMoveVertical(-160);
         
-        person = new Person();
-        person.changeColor("black");
-        person.moveHorizontal(-180);
-        person.moveVertical(-12);
-        person.makeVisible();
-    
-    
     }
-
     /**
      * Change this picture to black/white display
      */
@@ -105,9 +97,15 @@ public class Picture
     public void atardecer()
     
     {
+        person = new Person();
+        person.moveHorizontal(-300);
+        person.moveVertical(-10);
+        person.makeVisible();
         sun.slowMoveVertical(160);
+        person.slowMoveHorizontal(150);
         
-        person.slowMoveHorizontal(45);
+        
+        
 
     }
 }
